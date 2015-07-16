@@ -13,7 +13,7 @@ def log_std(msg):
 def get_response(url, log):
     try:
         http = httplib2.Http()
-        status, response = http.request("http://www.google.com")
+        status, response = http.request(url)
         return response
     except httplib2.ServerNotFoundError:
         log("Error retrieving " + url)
@@ -52,7 +52,7 @@ class Spider:
         response = get_response(URL, self.log)
         for link in find_links(response):
             self.log("Checking: " + link)
-            if link not in self.URLs and not self.is_url_in_site(link):
+            if link not in self.URLs and self.is_url_in_site(link):
                 self.URLs.add(link)
                 self._links_to_process.append(link)
 
