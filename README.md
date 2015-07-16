@@ -1,6 +1,3 @@
-# mini web crawler
-crawls through a website collecting all relevant links in that website
+#python3-rampage
 
-Before running this py script, run
-1. pip httplib2
-2. pip beautifulsoup4
+This repository keeps hold of code rampages in python. Quick python code for tools or services which have been done
