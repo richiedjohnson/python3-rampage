@@ -8,6 +8,8 @@ formspring_cracker.py also uses dictionary attack combined with sha256 hashing w
 
 usage 
 	python yahoo_cracker.py /input/Yahoo.txt
+	
 	python linkedin_cracker.py /input/Linkedin.txt /input/passwords1.txt,/input/passwords2.txt
+	
 	python lformspring_cracker.py /input/formspring.txt /input/passwords1.txt,/input/passwords2.txt
 
