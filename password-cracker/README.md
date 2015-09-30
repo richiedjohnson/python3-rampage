@@ -7,6 +7,7 @@ linkedin_cracker.py uses dictionary attack combined with sha1 hashing to find li
 formspring_cracker.py also uses dictionary attack combined with sha256 hashing with salt to crack passwords which were leaked
 
 usage 
+	
 	python yahoo_cracker.py /input/Yahoo.txt
 	
 	python linkedin_cracker.py /input/Linkedin.txt /input/passwords1.txt,/input/passwords2.txt
